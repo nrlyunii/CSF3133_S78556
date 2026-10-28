@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Course Feedback</title>
+</head>
+
+<!--Error 1 (line 10): incorrect closing tag </header>-->
+<!--Error 1 (line 18): table header names Topic appears twice-->
+<!--Error 1 (line 23): Missing </tr>-->
+<!--Error 1 (line 28): Missing </td>-->
+<!--Error 1 (line 29): Not match opening nad closing tag-->
+<!--Error 1 (line 40): Radio button uses name="good"-->
+<!--Error 1 (line 42): Radio button uses name="poor"-->
+<!--Error 1 (line 46): The checkbox label not match the checkbox's ID-->
+
+<body>
+    <header>
+        <h1>CSF3133 Course Feedback</h1>
+    </header>
+    <nav>
+        <a href="#results">Results</a> |
+        <a href="#form">Feedback Form</a>
+ <a href="#comments">Student Comments</a>
+    </nav>
+    <section id="results">
+        <h2>Feedback Summary</h2>
+        <table border="1">
+            <tr>
+                <th>Week</th>
+                <th>Topic</th>
+                <th>Rating</th>
+            </tr>
+<tr>
+                <td>1</td>
+                <td>Introduction to HTML</td>
+                <td>4.5</td>
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td>Tables and Forms</td>
+                <td>-</td>
+            </tr>
+
+            <tr>
+                <td>3</td>
+                <td>Semantic HTML</td>
+                <td>4.0</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="form">
+        <h2>Give Your Feedback</h2>
+        <form action="submit.php" method="post">
+            <label for="fullname">Name:</label><br>
+            <input type="text" id="fullname" name="name"><br><br>
+            <label>Overall rating:</label><br>
+            <input type="radio" id="good" name="rating" value="good">
+            <label for="good">Good</label><br>
+            <input type="radio" id="poor" name="rating" value="poor">
+            <label for="poor">Poor</label><br><br>
+            <input type="checkbox" id="lab" name="lab" value="yes">
+            <label for="lab">I attended all labs</label><br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+
+    <footer>
+        <p>Copyright &copy; 2026 CSF3133</p>
+    </footer>
+
+</body>
+</html>
+
+<body>
+    <header>
+        <h1>CSF3133 Course Feedback</h1>
+    </header>
+    <nav>
+        <a href="#results">Results</a> |
+        <a href="#form">Feedback Form</a>
+    </nav>
+
+    <section id="results">
+        <h2>Feedback Summary</h2>
+        <table border="1">
+            <tr>
+                <th>Week</th>
+                <th>Topic</th>
+                <th>Rating</th>
+            </tr>
+
+            <tr>
+                <td>1</td>
+                <td>Introduction to HTML</td>
+                <td>4.5</td>
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td>Tables and Forms</td>
+                <td>-</td>
+            </tr>
+
+            <tr>
+                <td>3</td>
+                <td>Semantic HTML</td>
+                <td>4.0</td>
+            </tr>
+
+     <!-- Week 4 and Week 5 share the Mini Project topic -->
+     <tr>
+      <td>4</td>
+       <td rowspan="2">Mini Project</td>
+       <td>4.5</td>
+     </tr>
+
+     <tr>
+      <td>5</td>
+       <td>4.8</td>
+     </tr>
+
+ <!-- Average rating row -->
+      <tr>
+      <td colspan="2">Average Rating</td>
+      <td>4.65</td>
+     </tr>
+
+        </table>
+    </section>
+
+    <section id="form">
+        <h2>Give Your Feedback</h2>
+
+        <form action="submit.php" method="post">
+            <label for="fullname">Name:</label><br>
+            <input type="text" id="fullname" name="name"><br><br>
+     <!-- E-mail input -->
+     <label for="email">E-mail:</label><br>
+     <input type="email" id="email" name="email"><br><br>
+            <label>Overall rating:</label><br>
+            <input type="radio" id="good" name="rating" value="good">
+            <label for="good">Good</label><br>
+     <input type="radio" id="average" name="rating" value="average">
+     <label for="average">Average</label><br>
+            <input type="radio" id="poor" name="rating" value="poor">
+            <label for="poor">Poor</label><br><br>
+            <input type="checkbox" id="lab" name="lab" value="yes">
+     <!-- Topics I want more practice on -->
+     <p>Topics I want more practice on:</p>
+<input type="checkbox" id="html" name="practice[]" value="HTML">
+     <label for="html">HTML</label><br>
+
+     <input type="checkbox" id="css" name="practice[]" value="CSS">
+      <label for="css">CSS</label><br>
+
+     <input type="checkbox" id="forms" name="practice[]" value="Forms">
+     <label for="forms">Forms</label><br><br>
+            <label for="lab">I attended all labs</label><br><br>
+
+     <label for="section">Section/Group:</label><br>
+
+     <select id="section" name="section">
+          <option value="">Select your group</option>
+        <option value="1">Group 1</option>
+        <option value="2">Group 2</option>
+         <option value="3">Group 3</option>
+     </select><br><br>
+
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+
+    <footer>
+        <p>Copyright &copy; 2026 CSF3133</p>
+    </footer>
+
+</body>
+</html>
