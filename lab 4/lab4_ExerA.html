@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visit Terengganu</title>
+<!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+<!-- Internal CSS -->
+    <style>
+        h1 {
+            text-decoration:underline;
+        }
+
+        .center {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="center">Visit Terengganu</h1>
+        <p class="center">Come Explore the beauty of Terengganu With Us !!</p>
+    </header>
+ <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#destinations">Destinations</a></li>
+            <li><a href="#video">Video</a></li>
+            <li><a href="#form">Trip Form</a></li>
+        </ul>
+    </nav>
+    <section id="destinations">
+        <h2>Popular Destinations</h2>
+        <article class="card">
+            <h3>Redang Island</h3>
+            <p>Popular island with clear blue water scenery.</p>
+            <p>
+                <span class="old-price">RM300</span>
+                <span class="price">RM200</span>
+            </p>
+        </article>
+<article class="card">
+            <h3>Perhentian Island</h3>
+            <p>Perfect place for diving and snorkeling.</p>
+            <p>
+                <span class="old-price">RM250</span>
+                <span class="price">RM180</span>
+            </p>
+        </article>
+<article class="card">
+            <h3>Pulau Kapas</h3>
+            <p>Want a peaceful and private moments? Here is the best choice.</p>
+            <p>
+                <span class="old-price">RM150</span>
+                <span class="price">RM100</span>
+            </p>
+        </article>
+<p>Trip Seats Filled:</p>
+<meter min="0" max="40" value="28"></meter>
+</section>
+<!-- Video Section -->
+    <section id="video">
+        <h2>Promotional Video</h2>
+        <figure>
+            <video controls width="500">
+                <source src="terengganu.mp4" type="video/mp4">
+            </video>
+            <figcaption><b>
+                Discover it yourself the amazing islands of Terengganu!</b>
+            </figcaption>
+        </figure>
+    </section>
+<section id="trip">
+        <h2>Trip Registration Form</h2>
+        <form class="trip-form">
+            <label>Name:</label><br>
+            <input type="text"><br><br>
+            <label>Email:</label><br>
+            <input type="email"><br><br>
+            <label>Traveller Type:</label><br>
+            <input type="radio" name="type"> Teenager
+            <input type="radio" name="type"> Adult
+            <input type="radio" name="type"> Staff
+            <br><br>
+
+            <label>Interests:</label><br>
+            <input type="checkbox"> Islands
+            <input type="checkbox"> Food
+            <input type="checkbox"> Culture
+            <input type="checkbox"> Nature
+            <br><br>
+
+            <input type="submit" 
+	     value="Submit">
+    </form>
+</section>
+<!-- Footer -->
+    <footer>
+        <p>© 2026 Visit Terengganu</p>
+        <address>
+            Email:
+            <a href="mailto:tourism@terengganu.com">
+                tourism@terengganu.com
+            </a>
+        </address>
+    </footer>
+</body>
+</html>

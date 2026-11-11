@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+ul {
+    list-style-type: none;
+    background-color: navy;
+    padding: 10px;
+    text-align: center;
+}
+
+li {
+    display: inline-block;
+}
+
+li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px;
+    display: block;
+}
+
+a:link {
+    color: white;
+}
+
+a:visited {
+    color: yellow;
+}
+
+a:hover {
+    background-color: pink;
+    color: white;
+}
+
+a:active {
+    color: red;
+}
+
+h2 {
+    text-decoration: underline;
+}
+
+#destinations {
+    background-color: #e6f7ff;
+    padding: 20px;
+}
+
+#video {
+    background-color: #e6f7ff;
+    padding: 20px;
+}
+
+.card {
+    border: 1px solid gray;
+    padding: 10px;
+    margin: 10px;
+    background-color: white;
+}
+
+.price {
+    color: red;
+    font-weight: bold;
+}
+
+.old-price {
+    text-decoration: line-through;
+}
+
+.trip-form {
+    background-color: #e6f7ff;
+    border: 1px solid black;
+    width: 90%;
+    padding: 20px;
+}
+
+video {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+}
