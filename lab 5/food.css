@@ -1,0 +1,109 @@
+/* Body */
+body {
+    background-color: #FBF7F0;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-image: url("header-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+header h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 42px;
+}
+
+header p {
+    background-color: rgba(0,0,0,0.5);
+    display: inline-block;
+    padding: 8px;
+}
+
+/* Navigation */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 14px 16px;
+}
+
+nav li a:hover {
+    background-color: #111;
+}
+
+.active {
+    background-color: #E67E22;
+}
+
+/* Content */
+main {
+    width: 90%;
+    max-width: 980px;
+    margin: auto;
+    padding: 20px;
+}
+
+p {
+    text-align: justify;
+    line-height: 1.6;
+}
+
+/* Table */
+#menuTable {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#menuTable th,
+#menuTable td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+#menuTable th {
+    background-color: #E67E22;
+    color: white;
+    text-transform: uppercase;
+}
+
+#menuTable tr:nth-child(even) {
+    background-color: #F2F2F2;
+}
+
+#menuTable tr:hover {
+    background-color: #FDEBD0;
+}
+
+.price {
+    text-align: right;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #EFE6D8;
+    padding: 15px;
+    margin-top: 20px;
+}
