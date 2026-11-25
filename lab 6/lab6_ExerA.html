@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rock Paper Scissors Game</title>
+<!-- Link CSS -->
+    <link rel="stylesheet" href="styleA.css">
+</head>
+<body>
+<!-- Header -->
+<header>
+   <h1>Rock Paper Scissors Game</h1>
+   <p>Enter your name and challenge the computer!</p>
+</header>
+
+<section>
+    <label>Name:</label>
+    <input type="text" id="playerName">
+    <button onclick="startGame()"> Start Game </button>
+</section>
+
+<section class="gameArea">
+
+        <button onclick="playRound('rock')"> Rock </button>
+        <button onclick="playRound('paper')"> Paper </button>
+        <button onclick="playRound('scissors')"> Scissors </button>
+<div class="images">
+            <div>
+                <h3>You</h3>
+                <img id="playerImg"
+                     src="rock.png"
+                     alt="Player Choice">
+            </div>
+            <div>
+                <h3>Computer</h3>
+                <img id="computerImg"
+                     src="rock.png"
+                     alt="Computer Choice">
+            </div>
+        </div>
+</section>
+<!-- Result Section -->
+    <section>
+
+        <p id="result"></p>
+
+        <h3>Scoreboard</h3>
+
+        <p>
+            Wins:
+            <span id="wins">0</span>
+            |
+
+            Losses:
+            <span id="losses">0</span>
+            |
+
+            Draws:
+            <span id="draws">0</span>
+        </p>
+
+    </section>
+
+    <!-- History -->
+    <section>
+
+        <h3>Game History</h3>
+
+        <table id="history">
+
+            <tr>
+                <th>Round</th>
+                <th>You</th>
+                <th>Computer</th>
+                <th>Result</th>
+            </tr>
+
+        </table>
+
+    </section>
+
+<!-- Buttons -->
+    <section>
+
+        <button onclick="showSummary()">
+            Show Summary
+        </button>
+
+        <button onclick="resetGame()">
+            Reset
+        </button>
+
+    </section>
+<!-- Footer -->
+<footer>
+
+        <p id="startTime"></p>
+        <p>&copy; 2026 Computer Science Club</p>
+</footer>
+<!-- Link JS -->
+    <script src="game.js"></script>
+
+</body>
+</html>
