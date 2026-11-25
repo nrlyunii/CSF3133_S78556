@@ -1,0 +1,50 @@
+body{
+    font-family: Arial, sans-serif;
+    background:#f4f4f4;
+    padding:20px;
+}
+
+h2{
+    color:#333;
+}
+
+input{
+    padding:8px;
+    width:200px;
+}
+
+button{
+    padding:10px 15px;
+    background:#007bff;
+    color:white;
+    border:none;
+    cursor:pointer;
+    margin:1px;
+}
+
+button:hover{
+    background:#0056b3;
+}
+
+table{
+    margin:10px auto;
+    border-collapse:collapse;
+}
+
+table, th, td{
+    border:1px solid black;
+}
+
+th{
+    background:#007bff;
+    color:white;
+}
+
+th, td{
+    padding:10px;
+}
+
+#result{
+    font-size:20px;
+    font-weight:bold;
+}

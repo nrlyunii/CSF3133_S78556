@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Application</title>
+    <link rel="stylesheet" href="stylelab.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Quiz Application</h1>
+    <div id="quiz-container">
+        <div id="timer">Time Left: <span id="time">15</span>s</div>
+        <h2 id="question">Question appears here</h2>
+        <div id="options"></div>
+        <p id="feedback"></p>
+        <button id="nextBtn">Next Question</button>
+    </div>
+
+    <div id="result" class="hidden">
+        <h2>Quiz Completed!</h2>
+        <p>Your Score: <span id="score"></span></p>
+        <button onclick="startQuiz()">Restart Quiz</button>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
